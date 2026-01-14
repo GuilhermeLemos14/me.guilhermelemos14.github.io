@@ -2,38 +2,147 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<meta name="theme-color" content="#0a0f2d" />
+		<meta name="color-scheme" content="dark" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Choose your language</title>
+		<meta
+			name="description"
+			content="Kaelunyx — artist, developer, and musician. A personal universe shaped by cosmic aesthetics and digital creativity." />
+		<meta
+			property="og:title"
+			content="Kaelunyx — Cosmic Universe of Art and Code" />
+		<meta
+			property="og:description"
+			content="Exploring inner universes through art, programming, and music." />
+		<meta
+			property="og:image"
+			content="https://guilhermelemos14.github.io/kaelunyx-website/assets/img/og-image.png" />
+		<meta property="og:image:type" content="image/png" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta
+			property="og:url"
+			content="https://guilhermelemos14.github.io/kaelunyx-website" />
+		<link
+			rel="canonical"
+			href="https://guilhermelemos14.github.io/kaelunyx-website" />
+		<title>Kaelunyx Website - Index</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="assets/styles/css/vars.css" />
+		<link rel="stylesheet" href="assets/styles/css/stars.css" />
 		<style>
+			html {
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				user-select: none;
+			}
+
 			body {
-				font-family: system-ui, sans-serif;
-				text-align: center;
+				background: linear-gradient(
+					to bottom,
+					var(--bg),
+					hsl(from var(--cosmic-purple) h s calc(l - 16))
+				);
+				margin: 0;
+			}
+
+			#wrapper {
+				color: var(--cosmic-light);
+				font-family: var(--default-font);
 				padding: 3rem;
-				background: #ececec;
-				color: #202020;
+				text-align: center;
+				z-index: 10;
+			}
+
+			h1 {
+				font-size: 2.5rem;
+				margin-bottom: 0.5rem;
 			}
 
 			a {
 				display: inline-block;
 				margin: 1rem;
 				padding: 1rem 2rem;
-				background: #dedede;
+				background: var(--cosmic-blue);
 				border-radius: 8px;
 				text-decoration: none;
-				color: #202020;
+				color: hsl(0, 0%, 87%);
 				font-weight: bold;
 				transition: background 300ms linear;
 			}
 
 			a:hover {
-				background: #ccc;
+				background: hsl(
+					from var(--cosmic-blue) h calc(s - 16) calc(l - 8)
+				);
 			}
 		</style>
 	</head>
 	<body>
-		<h1>Welcome to Kaelunyx's world</h1>
-		<p>Choose your language:</p>
-		<a href="en/">English</a>
-		<a href="pt-br/">Português</a>
+		<div class="stars stars--back">
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+		</div>
+		<div id="wrapper">
+			<h1>Welcome to Kaelunyx's world</h1>
+			<p>Choose your language:</p>
+			<a href="lang/en/">English</a>
+			<a href="lang/pt-br/">Português</a>
+		</div>
+		<div class="stars stars--front">
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+		</div>
 	</body>
 </html>

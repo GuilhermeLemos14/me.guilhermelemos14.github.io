@@ -1,0 +1,24 @@
+{
+	"name": "kaelunyx-website",
+	"version": "2.0.0",
+	"description": "My website. Have a look.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"sass": "sass --watch assets/styles/scss:assets/styles/css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/GuilhermeLemos14/kaelunyx-website.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/GuilhermeLemos14/kaelunyx-website/issues"
+	},
+	"homepage": "https://github.com/GuilhermeLemos14/kaelunyx-website#readme",
+	"devDependencies": {
+		"sass": "^1.97.2"
+	}
+}
