@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="theme-color" content="#e6e6ff" />
+		<meta name="theme-color" content="#b1adb2" />
 		<meta name="color-scheme" content="dark" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta
@@ -75,7 +75,6 @@
 
 			a {
 				display: inline-block;
-				margin: 1rem;
 				padding: 1rem 2rem;
 				background: var(--cosmic-blue);
 				border-radius: 8px;
@@ -89,6 +88,15 @@
 				background: hsl(
 					from var(--cosmic-blue) h calc(s - 16) calc(l - 8)
 				);
+			}
+
+			#lang-wrapper {
+				display: flex;
+				flex-direction: column;
+				margin-block-start: 8px;
+				margin-inline: auto;
+				gap: 20px;
+				width: 180px;
 			}
 		</style>
 	</head>
@@ -138,8 +146,11 @@
 		<div id="wrapper">
 			<h1>Welcome to Kaelunyx's world</h1>
 			<p>Choose your language:</p>
-			<a href="lang/en/">English</a>
-			<a href="lang/pt-br/">Português</a>
+			<div id="lang-wrapper">
+				<a href="lang/en/">English</a>
+				<a href="lang/es/">Español</a>
+				<a href="lang/pt-br/">Português</a>
+			</div>
 		</div>
 		<div class="stars stars--front">
 			<div class="star"></div>
