@@ -1,3 +1,10 @@
 User-agent: *
 Allow: /
-Sitemap: https://guilhermelemos14.github.io/kaelunyx-website/sitemap.xml
+
+# Evita indexar arquivos técnicos
+Disallow: /assets/scss/
+Disallow: /package.json
+Disallow: /package-lock.json
+
+# Sitemap
+Sitemap: https://guilhermelemos14.github.io/sitemap.xml
