@@ -24,6 +24,8 @@ body {
 	background-attachment: fixed;
 	min-height: 100vh;
 	min-height: 100dvh;
+	padding: 0;
+	margin: 0;
 }
 
 #wrapper {
@@ -70,6 +72,10 @@ nav a {
 nav a:hover {
 	background-color: var(--button-bg-hover);
 	text-decoration: none;
+}
+
+nav a:focus {
+	outline: 2px var(--cosmic-adaptive-purple) solid;
 }
 
 a {
@@ -163,6 +169,10 @@ h3 a {
 	background-color: var(--button-bg-hover);
 }
 
+.copy-email:focus {
+	outline: 2px var(--cosmic-adaptive-purple) solid;
+}
+
 footer {
 	background: linear-gradient(to bottom, #555, #a8a8a8);
 	background-clip: text;
@@ -184,7 +194,7 @@ footer .copyright {
 
 @media (max-width: 700px) {
 	#wrapper {
-		margin-block: 0;
+		margin: 0;
 		border-radius: 0;
 	}
 }
