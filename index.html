@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="theme-color" content="#b1adb2" />
+		<meta name="theme-color" content="#98949c" />
 		<meta name="color-scheme" content="dark" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta
@@ -80,6 +80,18 @@
 				margin-bottom: 0.5rem;
 			}
 
+			p {
+				margin-block-end: 20px;
+			}
+
+			#lang-wrapper {
+				display: flex;
+				flex-direction: column;
+				margin-inline: auto;
+				gap: 20px;
+				width: 180px;
+			}
+
 			a {
 				display: inline-block;
 				padding: 1rem 2rem;
@@ -95,15 +107,6 @@
 				background: hsl(
 					from var(--cosmic-blue) h calc(s - 16) calc(l - 8)
 				);
-			}
-
-			#lang-wrapper {
-				display: flex;
-				flex-direction: column;
-				margin-block-start: 8px;
-				margin-inline: auto;
-				gap: 20px;
-				width: 180px;
 			}
 		</style>
 	</head>
