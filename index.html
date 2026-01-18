@@ -44,12 +44,8 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&display=swap"
 			rel="stylesheet" />
-		<link
-			rel="stylesheet"
-			href="https://guilhermelemos14.github.io/assets/css/vars.css" />
-		<link
-			rel="stylesheet"
-			href="https://guilhermelemos14.github.io/assets/css/stars.css" />
+		<link rel="stylesheet" href="/assets/css/vars.css" />
+		<link rel="stylesheet" href="/assets/css/stars.css" />
 		<style>
 			html {
 				margin: 0;
@@ -114,6 +110,27 @@
 				outline: 2px var(--cosmic-light) solid;
 			}
 		</style>
+		<script src="/assets/js/stars.js" defer></script>
+		<script defer>
+			document.addEventListener("DOMContentLoaded", () => {
+				const params = new URLSearchParams(location.search);
+				const starsEnabled = params.get("stars") !== "off";
+
+				const langLinks = document.querySelectorAll("#lang-wrapper a");
+				langLinks.forEach((link) => {
+					const currentUrl = new URL(
+						link.getAttribute("href"),
+						window.location.href,
+					);
+					if (starsEnabled) {
+						currentUrl.searchParams.delete("stars");
+					} else {
+						currentUrl.searchParams.set("stars", "off");
+					}
+					link.setAttribute("href", currentUrl.toString());
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<div class="stars stars--back">
@@ -158,22 +175,17 @@
 			<div class="star"></div>
 			<div class="star"></div>
 		</div>
+		<button id="toggle-stars-button" aria-label="Toggle Stars">
+			Toggle Stars
+		</button>
 		<div id="wrapper">
 			<h1>Welcome to Kaelunyx's world</h1>
 			<p>Choose your language:</p>
 			<div id="lang-wrapper">
-				<a href="https://guilhermelemos14.github.io/lang/en/"
-					>English</a
-				>
-				<a href="https://guilhermelemos14.github.io/lang/es/"
-					>Español</a
-				>
-				<a href="https://guilhermelemos14.github.io/lang/fr/"
-					>Français</a
-				>
-				<a href="https://guilhermelemos14.github.io/lang/pt-br/"
-					>Português</a
-				>
+				<a href="/lang/en/">English</a>
+				<a href="/lang/es/">Español</a>
+				<a href="/lang/fr/">Français</a>
+				<a href="/lang/pt-br/">Português</a>
 			</div>
 		</div>
 		<div class="stars stars--front">

@@ -1,3 +1,4 @@
+@charset "utf-8";
 @use "sass:math";
 
 @mixin sp-layout {
@@ -21,6 +22,25 @@ body {
 	@return $random_range;
 }
 
+#toggle-stars-button {
+	position: fixed;
+	top: 16px;
+	right: 16px;
+	background-color: var(--button-bg);
+	color: var(--button-fg);
+	padding-block: 8px;
+	padding-inline: 12px;
+	border-radius: 8px;
+	border: var(--border);
+	cursor: pointer;
+	transition: background-color 300ms linear;
+	z-index: 20;
+}
+
+#toggle-stars-button:hover {
+	background-color: var(--button-bg-hover);
+}
+
 .stars {
 	position: fixed;
 	top: 0;
@@ -30,6 +50,10 @@ body {
 	transform: rotate(-45deg);
 	user-select: none;
 	pointer-events: none;
+}
+
+.no-stars .stars {
+	display: none;
 }
 
 .stars--back {

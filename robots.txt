@@ -3,8 +3,6 @@ Allow: /
 
 # Evita indexar arquivos técnicos
 Disallow: /assets/scss/
+Disallow: /assets/css/stars.css.map
 Disallow: /package.json
 Disallow: /package-lock.json
-
-# Sitemap
-Sitemap: https://guilhermelemos14.github.io/sitemap.xml
