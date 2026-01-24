@@ -87,11 +87,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-a.em,
-a.em:hover {
-	text-decoration: underline wavy 1px;
-}
-
 p {
 	text-align: justify;
 }
