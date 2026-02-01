@@ -29,6 +29,7 @@
 
 	--border-color: #555;
 	--border: 1px solid var(--border-color);
+	--outline: 2px var(--cosmic-light) solid;
 
 	--default-font: "Space Grotesk", sans-serif;
 }

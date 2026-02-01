@@ -33,3 +33,9 @@
 	display: block;
 	border-radius: 14px;
 }
+
+.project-preview:has(:focus),
+.project-preview:focus {
+	outline: var(--outline);
+	outline-offset: 4px;
+}

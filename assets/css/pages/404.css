@@ -16,20 +16,29 @@ body {
 		var(--bg),
 		hsl(from var(--cosmic-purple) h s calc(l - 16))
 	);
+	color: var(--cosmic-light);
+	font-family: var(--default-font);
+	text-align: center;
 	margin: 0;
 }
 
 #wrapper {
-	color: var(--cosmic-light);
-	font-family: var(--default-font);
-	padding: 3rem;
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	align-content: center;
+	justify-content: center;
 	z-index: 10;
 }
 
 h1 {
 	font-size: 2.5rem;
 	margin-bottom: 0.5rem;
+}
+
+p {
+	margin-block-end: 20px;
 }
 
 a {
@@ -49,5 +58,5 @@ a:hover {
 }
 
 a:focus {
-	outline: 2px solid hsl(from var(--cosmic-blue) h s calc(l - 8));
+	outline: var(--outline);
 }

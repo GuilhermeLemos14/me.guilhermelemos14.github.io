@@ -75,5 +75,5 @@ p {
 }
 
 a:focus {
-	outline: 2px var(--cosmic-light) solid;
+	outline: var(--outline);
 }
