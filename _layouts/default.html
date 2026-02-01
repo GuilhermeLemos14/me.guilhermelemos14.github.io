@@ -7,6 +7,21 @@
 		<link rel="stylesheet" href="/assets/css/pages/{{ page.style }}" />
 		{% endif %} {% if page.script %}
 		<script src="/assets/js/pages/{{ page.script }}"></script>
+		{% endif %} {% if page.jsonld %}
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "{{ page.json-ld.type | default: 'WebSite' }}",
+				"name": "Kaelunyx Space",
+				"url": "https://kaelunyx.space/",
+				"description": "{{ page.description | escape }}",
+				"publisher": {
+					"@type": "Person",
+					"name": "{{ site.autor }}"
+				},
+				"inLanguage": "en-CA"
+			}
+		</script>
 		{% endif %}
 	</head>
 	<body>

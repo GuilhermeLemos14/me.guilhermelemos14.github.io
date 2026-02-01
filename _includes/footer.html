@@ -1,4 +1,6 @@
 <footer>
+	{% assign include.nonav = include.nonav | default: false %} {% if
+	include.nonav == false %}
 	<nav id="footer-links">
 		<a
 			href="https://discord.com/users/1130534537290592367"
@@ -60,6 +62,7 @@
 			</svg>
 		</a>
 	</nav>
+	{% endif %}
 
 	<p>My world is dark, but not sad.</p>
 	<p>Keep wandering...</p>

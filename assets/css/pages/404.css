@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-@import "/assets/css/footer.css";
 @import "/assets/css/stars.css";
 @import "/assets/css/vars.css";
 
@@ -17,27 +16,15 @@ body {
 		var(--bg),
 		hsl(from var(--cosmic-purple) h s calc(l - 16))
 	);
-	color: var(--cosmic-light);
-	font-family: var(--default-font);
-	text-align: center;
 	margin: 0;
 }
 
 #wrapper {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	width: 100%;
-	align-content: center;
-	justify-content: center;
-	gap: 5vh;
-	z-index: 10;
-}
-
-header {
-	align-self: center;
+	color: var(--cosmic-light);
+	font-family: var(--default-font);
 	padding: 3rem;
-	padding-block-end: 0;
+	text-align: center;
+	z-index: 10;
 }
 
 h1 {
@@ -45,22 +32,9 @@ h1 {
 	margin-bottom: 0.5rem;
 }
 
-p {
-	margin-block-end: 20px;
-}
-
-#link-wrapper {
-	display: flex;
-	flex-direction: column;
-	margin-block-start: 20px;
-	margin-inline: auto;
-	gap: 20px;
-	width: 180px;
-	position: relative;
-}
-
-#link-wrapper a {
+a {
 	display: inline-block;
+	margin: 1rem;
 	padding: 1rem 2rem;
 	background: var(--cosmic-blue);
 	border-radius: 8px;
@@ -70,10 +44,10 @@ p {
 	transition: background 300ms linear;
 }
 
-#link-wrapper a:hover {
+a:hover {
 	background: hsl(from var(--cosmic-blue) h calc(s - 16) calc(l - 8));
 }
 
 a:focus {
-	outline: 2px var(--cosmic-light) solid;
+	outline: 2px solid hsl(from var(--cosmic-blue) h s calc(l - 8));
 }
