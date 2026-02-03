@@ -4,9 +4,11 @@
 		{% include head.html title=page.title description=page.description
 		url=page.url nostyle=page.nostyle noscript=page.noscript %} {% if
 		page.style %}
-		<link rel="stylesheet" href="/assets/css/pages/{{ page.style }}" />
+		<link
+			rel="stylesheet"
+			href="https://kaelunyx.space/assets/css/pages/{{ page.style }}" />
 		{% endif %} {% if page.script %}
-		<script src="/assets/js/pages/{{ page.script }}"></script>
+		<script src="https://kaelunyx.space/assets/js/pages/{{ page.script }}"></script>
 		{% endif %} {% if page.jsonld %}
 		<script type="application/ld+json">
 			{
