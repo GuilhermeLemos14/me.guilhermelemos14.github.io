@@ -1,6 +1,6 @@
 {
-	"name": "kaelunyx-website",
-	"version": "5.2.0",
+	"name": "me.kaelunyx.space",
+	"version": "5.2.1",
 	"description": "My website. Have a look.",
 	"main": "index.js",
 	"scripts": {
@@ -9,15 +9,15 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/GuilhermeLemos14/kaelunyx-website.git"
+		"url": "git+https://github.com/GuilhermeLemos14/me.kaelunyx.space.git"
 	},
 	"keywords": [],
 	"author": "Guilherme Lemos",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/GuilhermeLemos14/kaelunyx-website/issues"
+		"url": "https://github.com/GuilhermeLemos14/me.kaelunyx.space/issues"
 	},
-	"homepage": "https://github.com/GuilhermeLemos14/kaelunyx-website#readme",
+	"homepage": "https://github.com/GuilhermeLemos14/me.kaelunyx.space#readme",
 	"devDependencies": {
 		"sass": "^1.97.2"
 	}
